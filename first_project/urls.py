@@ -5,7 +5,7 @@ from apps.products import views
 
 
 urlpatterns = [
-    path("/", include('apps.products.urls'), name="home"),
     path("", include('apps.products.urls'), name="home"),
+    # path("", include('apps.products.urls'), name="home"),
     path('admin/', admin.site.urls),
 ]

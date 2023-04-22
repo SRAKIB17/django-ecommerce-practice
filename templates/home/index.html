@@ -8,7 +8,11 @@
 
   <body>
     {% include 'header.html' %}
-    {%include "skeleton/products.html" %}
+     <div class=' w-full'>
+      {% for x in mycar.items %}
+         {% comment %} {%include "skeleton/products.html" %} {% endcomment %}
+      {% endfor %}
+    </div> 
     {% include "footer.html" %}
   </body>
 
