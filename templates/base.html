@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    {% block metaAndTitle %}
+
+    {% endblock%}
+    <!--Common meta tag-->
+    {% include 'meta_tag_common.html' with title='Home page' %}
+    <link rel="stylesheet" href="/static/common/global.css" />
+  </head>
+  
+  <body>
+      <!--Header-->
+      {% include 'header.html' %}
+
+      {% block bodyBlock%}
+      {% endblock %}
+      <!-- Footer -->
+      {% include "footer.html" %}
+  </body>
+</html>
